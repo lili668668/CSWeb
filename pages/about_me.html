@@ -5,7 +5,7 @@
 <meta name="author" content="ballfish">
 <meta http-equiv="Content Type" content="text/html" charset="utf-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<link rel="shortcut icon" href="picture/ballfish.png" />
+<link rel="shortcut icon" href="../picture/ballfish.png" />
 <link rel="stylesheet" type="text/css" href="../css/all.css">
 <link rel="stylesheet" type="text/css" href="../css/prism.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -28,30 +28,99 @@
 </div>
 
 <div class="container">
-	<pre>
-		<code class="language-java">
-			public class Person {
-				public String name;
-				public String[] favorites;
-				public String[] hobbies;
-				public String mantra;
-				public void say() {
-					System.out.println(mantra);
-				}
+	<h3 class="text-center">我是誰？</h3>
+	<div class="row banner">
+		<div class="col text-center">
+			<div>
+				<img src="../picture/sitcon-camp-2017.jpg" height="300px" class="rounded-circle">
+				<div>
+					<small>Photo Credit：陳宏學</small>
+				</div>
+			</div>
+			<div>
+				<img src="../picture/ballfish-pic.png" height="300px" class="rounded-circle">
+			</div>
+		</div>
+		<div class="col">
+			<pre class="code-fix">
+				<code class="language-java">
+public class Person {
+	public String name;
+	public String[] favorites;
+	public String[] hobbies;
+	public String mantra;
+	public void say() {
+		System.out.println(mantra);
+	}
+}
+
+public class introduction {
+	public static void main(String[] args) {
+		Person ballfish = new Person();
+		ballfish.name = "洪慈吟";
+		ballfish.favorites = 
+			{"動畫", "漫畫", "遊戲", "小說", "電影", "電腦"};
+		ballfish.hobbies = 
+			{"寫程式", "寫小說", "耍廢"};
+		ballfish.mantra = "早安 (・ω・)ノ";
+		ballfish.say();
+	}
+}
+				</code>
+			</pre>
+		</div>
+	</div>
+	<h3 class="text-center">做過什麼？</h3>
+	<div class="row banner">
+		<div class="col">
+			<pre class="code-fix">
+				<code class="language-json">
+{
+	"參與的社群": [
+		"SITCON": {
+			"全名": "學生計算機年會",
+			"簡述": "一個由學生組成的資訊科技年會。",
+			"官網": "http://sitcon.org",
+			"參與職務": {
+				"2016 夏令營": "課活組員",
+				"2017 年會": "行政組長",
+				"2017 夏令營": "行政組員",
+				"2018 年會": "副召"
 			}
-			
-			public class introduction {
-				public static void main(String[] args) {
-					Person ballfish = new Person();
-					ballfish.name = "洪慈吟";
-					ballfish.favorites = {"動畫", "漫畫", "遊戲", "小說", "電影", "電腦"};
-					ballfish.hobbies = {"寫程式", "寫小說", "耍廢"};
-					ballfish.mantra = "早安 (・ω・)ノ";
-					ballfish.say();
-				}
+		},
+		"MOPCON": {
+			"全名": "行動科技應用開發者年會",
+			"簡述": "濁水溪以南，最大最熱血的行動科技年會。",
+			"官網": "http://mopcon.org",
+			"參與職務": {
+				"2016 年會": "行政組員",
+				"2017 年會": "行政組員"
 			}
-		</code>
-	</pre>
+		}
+	], 
+	"工讀或實習": [
+	],
+	"做過什麼專案": [
+		"大專生研究計劃": {
+			"專案名稱": "程式教學 3D 遊戲",
+			"指導老師": "朱蕙君",
+			"專案官網": "https://lili668668.github.io/SuperCubeWeb/",
+			"專案簡述": "一個教初學者學習程式邏輯的遊戲"
+		}
+	]
+}
+				</code>
+			</pre>
+		</div>
+		<div class="col">
+			<div style="padding-top: 150px;">
+				<img src="http://sitcon.org/branding/logo.svg" height="300px">
+				<img src="../picture/stone.png" height="250px">
+				<img src="../picture/mopcon.jpg" height="250px" style="padding: 10px;">
+				<img src="../picture/supercube-logo.png" height="250px" style="padding: 10px;">
+			</div>
+		</div>
+	</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
