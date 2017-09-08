@@ -1,8 +1,4 @@
-* {
-	font-family: 'Microsoft JhengHei','PT Sans Narrow','Source Han Sans TWHK',sans-serif !important;
-}
-
-.banner {
-	padding-top: 50px;
-	padding-bottom: 50px;
+.title:hover {
+	color: #ff6060;
+	text-decoration: none;
 }

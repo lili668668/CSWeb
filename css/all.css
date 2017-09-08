@@ -1,0 +1,28 @@
+* {
+	font-family: 'Microsoft JhengHei','PT Sans Narrow','Source Han Sans TWHK',sans-serif !important;
+}
+
+.banner {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.table-fix td {
+	border-color: #bac9ff !important;
+	text-align: center;
+}
+
+.table-fix tr {
+	border-color: #bac9ff !important;
+	text-align: center;
+}
+
+.table-fix th {
+	border-color: #bac9ff !important;
+	text-align: center;
+}
+
+.table-fix {
+	border-color: #bac9ff !important;
+	text-align: center;
+}
